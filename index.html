@@ -4975,11 +4975,11 @@ function render() {
 
       <!-- RIGHT -->
       <div class="panel">
-        <div class="panel-title">Sale Details</div>
+        <div class="panel-title">Detalle de Venta</div>
         <div class="right-panel-scroll">
           <div class="form-row">
             <div class="form-field">
-              <label>Issue Date</label>
+              <label>Fecha</label>
               <input type="date" id="issue-date" value="${todayISO()}" />
             </div>
             <div class="form-field">
@@ -4990,7 +4990,7 @@ function render() {
 
           <div class="form-row">
             <div class="form-field full suggest-wrap">
-              <label>Customer</label>
+              <label>Cliente</label>
               <input type="text" id="cust-search" placeholder="Type to change customer…" autocomplete="off" />
               <div class="suggest-list" id="cust-suggest"></div>
               <div class="customer-display" id="cust-selected"></div>
@@ -4999,7 +4999,7 @@ function render() {
 
           <div class="form-row">
             <div class="form-field full">
-              <label>Payment Method</label>
+              <label>Modo de pago</label>
               <select id="payment-method" class="gate-input" style="padding:9px 10px;font-size:13px"></select>
             </div>
           </div>
@@ -5012,13 +5012,13 @@ function render() {
 
           <div class="summary">
             <div class="summary-row"><span>Items</span><span class="v" id="sum-lines">0</span></div>
-            <div class="summary-row"><span>Total Quantity</span><span class="v" id="sum-qty">0</span></div>
+            <div class="summary-row"><span>Cantidad Total</span><span class="v" id="sum-qty">0</span></div>
             <div class="summary-row grand"><span class="l">Total</span><span class="v" id="sum-total">0.00</span></div>
           </div>
 
           <div class="actions">
-            <button class="btn btn-secondary" onclick="clearCart()">Clear</button>
-            <button class="btn btn-print" onclick="showReceiptModal()" title="Print last receipt">🖨 Print</button>
+            <button class="btn btn-secondary" onclick="clearCart()">Limpiar</button>
+            <button class="btn btn-print" onclick="showReceiptModal()" title="Print last receipt">🖨 Imprimir</button>
             <button class="btn btn-primary" id="submit-btn" onclick="submitSale()">Completar Venta</button>
           </div>
         </div>
